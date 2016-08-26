@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "LOTR";
+  src: url("/fonts/lotr.ttf");
+}
+
+ul {
+     background-image: url("/images/nav_bg.png");
+     background-repeat: repeat-x;
+     background-size: auto 100%;
+     border-radius: 5px;
+     padding: 15px;
+     z-index: 1000;
+}
+
+li {
+     border-radius: 5px;
+     display: inline;
+     margin: 5px;
+}
+
+li a {
+     border-radius: 5px;
+     color: #ffffff;
+     padding: 10px;
+     text-decoration: none;
+}
+
+li a:hover {
+     background-image: url("/images/nav_item_bg.png");
+     text-decoration: none;
+}
+
+li.active a {
+     background-image: url("/images/nav_item_bg.png");
+}
+
+.lotr-font {
+     font-family: LOTR;
+     font-size: 25px;
+}
+
+.center {
+     text-align: center;
+}
+
+.citation {
+     font-style: italic;
+}
+
+body {
+     -moz-border-bottom-colors: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     background-image: url("/images/bg.png");
+     border-color: transparent;
+     border-image: url("/images/frame.png") 30 30 30 30 fill round round;
+     border-style: solid;
+     border-width: 20px;
+     font-family: sans-serif;
+}
+
+a {
+     text-decoration: none;
+}
+
+a:hover {
+     text-decoration: underline;
+}
+
+h1 {
+     font-size: 40px ! important;
+}
+
+.thumbnail {
+     width: 200px;
+     border: 1px dotted #000000;
+}
