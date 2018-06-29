@@ -2,23 +2,40 @@
 <html>
  <head>
    <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <title>About | Lord of the Test</title>
-   <link rel="stylesheet" type="text/css" href="css/main.css"/>
+   <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <script defer src="assets/js/main.js"></script>
  </head>
  <body>
-   <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="#">About</a></li>
-        <li><a  href="download.html">Download</a></li>
-        <li><a  href="gallery.html">Gallery</a></li>
-        <li><a  href="contact.html">Contact</a></li>
+   <header>
+     <nav>
+        <a class="fas fa-home" href="index.html"></a>
+        <a class="fas fa-bars" href="javascript:void(0)" onclick="showMenu()"></a>
+        <ul class="navbar" id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a  class="active" href="#">About</a></li>
+          <li><a  href="download.html">Download</a></li>
+          <li><a  href="gallery.html">Gallery</a></li>
+          <li><a  href="contact.html">Contact</a></li>
      </ul>
-  </nav>
+   </nav>
+    </header>
+    <div class="page-content">
 <h1 class="center lotr-font">About</h1>
-<section class="page-content">
+<section class="main-content">
 <p>A shadow is creeping across the land, an unstoppable mist of evil. Sauron and his legions of orcs have returned, striving to cleanse Middle-Earth of Elves, Dwarves, Hobbits, and Men. Everything has failed. Middle-Earth needs a leader, a new hope to pierce the fog of evil that is descending on all. Only the truly brave, fearless, and noble can help. Will you dare to save the world from the forces of destruction? Or will you lead the fierce orcs in their conquest of the world? The choice is open to all brave enough to enter this epic new adventure.</p>
-<p>Lord of the Test is an amazing Minetest subgame! It adds Lord of the Rings elements into the game. To learn more about this exciting quest, study the wiki scroll at <a href="https://wiki.minetest.net/Games/Lord_of_the_Test">https://wiki.minetest.net/Games/Lord_of_the_Test</a>. To embark, dowload the game <a href="download.html">here</a>.</p>
+<p>Lord of the Test is an amazing Minetest subgame! It adds Lord of the Rings elements into the game. To learn more about this exciting quest, study the wiki scroll <a href="https://wiki.minetest.net/Games/Lord_of_the_Test">here</a>. To embark, dowload the game <a href="download.html">here</a>.</p>
 </section>
+</div>
+<footer>
+  <h6 id="copyright"></h6>
+  <script>
+    //Current copyright year script
+    var time = new Date();
+    document.getElementById('copyright').innerHTML = '&copy; Copyright ' + time.getFullYear() + ' Minetest-LOTR';
+  </script>
+</footer>
 </body>
 </html>

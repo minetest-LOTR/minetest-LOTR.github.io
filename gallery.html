@@ -2,49 +2,65 @@
 <html>
  <head>
    <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <title>Gallery | Lord of the Test</title>
-   <link rel="stylesheet" type="text/css" href="css/main.css"/>
+   <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <script defer src="assets/js/main.js"></script>
  </head>
  <body>
-   <nav>
-      <ul>
-        <li><a  href="index.html">Home</a></li>
-        <li><a  href="about.html">About</a></li>
-        <li><a  href="download.html">Download</a></li>
-        <li><a  class="active" href="#">Gallery</a></li>
-        <li><a  href="contact.html">Contact</a></li>
+   <header>
+     <nav>
+        <a class="fas fa-home" href="index.html"></a>
+        <a class="fas fa-bars" href="javascript:void(0)" onclick="showMenu()"></a>
+        <ul class="navbar" id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a  href="about.html">About</a></li>
+          <li><a  href="download.html">Download</a></li>
+          <li><a  class="active" href="gallery.html">Gallery</a></li>
+          <li><a  href="contact.html">Contact</a></li>
      </ul>
-  </nav>
-
+   </nav>
+    </header>
+<div class="page-content">
 <h1 class="center lotr-font">Gallery</h1>
 <div class="gallery">
-  <img class="thumbnail" src="images/screenshots/thumb_1.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_2.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_3.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_4.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_5.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_6.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_7.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_8.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_9.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_10.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_11.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_12.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_13.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_14.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_15.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_16.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_17.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_18.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_19.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_20.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_21.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_22.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_23.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_24.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_25.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_26.png"/>
-  <img class="thumbnail" src="images/screenshots/thumb_27.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_1.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_2.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_3.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_4.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_5.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_6.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_7.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_8.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_9.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_10.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_11.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_12.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_13.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_14.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_15.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_16.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_17.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_18.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_19.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_20.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_21.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_22.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_23.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_24.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_25.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_26.png"/>
+  <img class="thumbnail" src="assets/images/screenshots/thumb_27.png"/>
 </div>
+</div>
+<footer>
+  <h6 id="copyright"></h6>
+  <script>
+    //Current copyright year script
+    var time = new Date();
+    document.getElementById('copyright').innerHTML = '&copy; Copyright ' + time.getFullYear() + ' Minetest-LOTR';
+  </script>
+</footer>
 </body>
 </html>

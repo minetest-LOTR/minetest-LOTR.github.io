@@ -2,22 +2,39 @@
 <html>
  <head>
    <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <title>Download | Lord of the Test</title>
-   <link rel="stylesheet" type="text/css" href="css/main.css"/>
+   <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <script defer src="assets/js/main.js"></script>
  </head>
  <body>
-   <nav>
-      <ul>
-        <li><a  href="index.html">Home</a></li>
-        <li><a  href="about.html">About</a></li>
-        <li><a  class="active" href="#">Download</a></li>
-        <li><a  href="gallery.html">Gallery</a></li>
-        <li><a  href="contact.html">Contact</a></li>
+   <header>
+     <nav>
+        <a class="fas fa-home" href="index.html"></a>
+        <a class="fas fa-bars" href="javascript:void(0)" onclick="showMenu()"></a>
+        <ul class="navbar" id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a  href="about.html">About</a></li>
+          <li><a class="active" href="#">Download</a></li>
+          <li><a  href="gallery.html">Gallery</a></li>
+          <li><a  href="contact.html">Contact</a></li>
      </ul>
-  </nav>
+   </nav>
+    </header>
+    <div class="page-content">
 <h1 class="center lotr-font">Download</h1>
 <p>Stable Version: <a href="https://github.com/minetest-LOTR/Lord-of-the-Test/archive/v1.1.0.zip">zip</a> <a href="https://github.com/minetest-LOTR/Lord-of-the-Test/archive/v1.1.0.tar.gz">tar.gz</a></p>
 <p>Development Version: <a href="https://github.com/minetest-LOTR/Lord-of-the-Test/archive/master.zip">zip</a></p>
 <a href="https://github.com/minetest-LOTR/Lord-of-the-Test">GitHub Project</a>
+</div>
+<footer>
+  <h6 id="copyright"></h6>
+  <script>
+    //Current copyright year script
+    var time = new Date();
+    document.getElementById('copyright').innerHTML = '&copy; Copyright ' + time.getFullYear() + ' Minetest-LOTR';
+  </script>
+</footer>
 </body>
 </html>
