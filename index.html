@@ -1,34 +1,60 @@
----
-title: "Home"
-layout: "default"
-isPage: true
-nav_id: 01
----
-
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title>Home | Lord of the Test</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <script defer src="assets/js/main.js"></script>
+ </head>
+ <body>
+   <header>
+     <nav>
+        <a class="fas fa-home" href="index.html"></a>
+        <a class="fas fa-bars" href="javascript:void(0)" onclick="showMenu()"></a>
+        <ul class="navbar" id="navbar">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a  href="about.html">About</a></li>
+          <li><a  href="download.html">Download</a></li>
+          <li><a  href="gallery.html">Gallery</a></li>
+          <li><a  href="contact.html">Contact</a></li>
+     </ul>
+   </nav>
+    </header>
+<div class="page-content">
 <div class="center">
-  <img src="/images/header.png" />
-  <p class="lotr-font">
-  <!--three rings for the elven kings under the sky<br />
+  <img class="header-image" src="assets/images/header.png" />
+  <p class="lotr-font poem">
+  <!-- Original Poem
+  Three rings for the elven kings under the sky<br />
   seven for the dwarf-lords in their halls of stone<br />
   nine for the mortal men doomed to die<br />
   one for the dark lord on his dark throne<br />
-  In the land of mordor where the shadows lie<br /> 
-  one ring to rule them all one ring to find them<br /> 
+  In the land of mordor where the shadows lie<br />
+  one ring to rule them all one ring to find them<br />
   one ring to bring them all and in the darkness bind them<br />
   In the land of mordor where the shadows lie<br />-->
-    
-  one Server for the russians forever doomed to be outdated,<br />
-  one Server of oldcoder in the dark depths of minetest.org,<br />
-  one Server of enoch for which I cannot find a good verse,<br />
-  one for the dark lord amaz on his dark throne of code,<br />
+
+  One Server for the Russians forever doomed to be outdated,<br />
+  One Server of oldcoder in the dark depths of minetest.org,<br />
+  One Server of enoch for which I cannot find a good verse,<br />
+  One for the dark lord amaz on his dark throne of code,<br />
   In the land of gitlab vs github where the shadows lie,<br />
-  one server to rule them all, one server to find them,<br />
-  one server to bring them all, and in the darkness bind them with awesome textures and bug fixes,<br />
+  One server to rule them all, one server to find them,<br />
+  One server to bring them all, and in the darkness bind them with awesome textures and bug fixes,<br />
   In the land of minetest where the shadows lie.<br />
 
   </p>
-  <p class="citation">-<a href="https://github.com/red-001">red-001</a> 
+  <p class="citation">-<a href="https://github.com/red-001">red-001</a>
   <br />(Based on J.R.R. Tolkien, The Lord of the Rings)</p>
-  
-  <h4>A shadow is creeping across the land, an unstoppable mist of evil. Sauron and his legions of orcs have returned, striving to cleanse Middle-Earth of Elves, Dwarves, Hobbits, and Men. Everything has failed. Middle-Earth needs a leader, a new hope to pierce the fog of evil that is descending on all. Only the truly brave, fearless, and noble can help. Will you dare to save the world from the forces of destruction? Or will you lead the fierce orcs in their conquest of the world? The choice is open to all brave enough to enter this epic new adventure.</h4>
+  <a href="https://github.com/minetest-LOTR/Lord-of-the-Test"><button class="button index-button">Find us on Github!</button></a>
+  <a href="https://minetest.net"><button class="button index-button">Check out Minetest!</button></a>
+  <p>Lord of the Test is an amazing Minetest subgame! It adds Lord of the Rings elements into the game.</p>
 </div>
+</div>
+<footer>
+  <h6 id="copyright"></h6>
+</footer>
+  </body>
+</html>

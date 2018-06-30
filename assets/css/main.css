@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "LOTR";
+  src: url("../fonts/lotr.ttf");
+}
+
+body {
+  background-image: url("../images/bg.png");
+  font-family: sans-serif;
+  margin-top: 0;
+}
+
+.navbar i {
+  display: none;
+}
+
+nav {
+     background-image: url("../images/nav_bg.png");
+     background-repeat: repeat-x;
+     background-size: auto 100%;
+     border-radius: 15px;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+     position: relative;
+     top: 0;
+     z-index: 2;
+}
+ul {
+  padding: 20px;
+  padding-top: 0;
+  margin-top: 0;
+
+}
+
+li {
+     border-radius: 5px;
+     display: inline;
+     margin: 0px;
+     position: relative;
+     top:0;
+}
+
+li a {
+     color: #fff;
+     padding: 20px;
+     text-decoration: none;
+}
+
+li a:hover {
+    background-image: url("../images/nav_item_bg.png");
+    text-decoration: none;
+}
+
+li a.active {
+     background-image: url("../images/nav_item_bg.png");
+}
+
+@media only screen and (max-width: 720px) {
+  nav {
+       height: 50px;
+       position: relative;
+       top: 0;
+       z-index: 2;
+       margin-bottom: 20px;
+  }
+
+  nav a {
+    display: inline;
+    color: beige;
+    font-size: 24px;
+    margin: 10px 20px;
+    margin-top: 10px;
+  }
+nav a.fa-bars {
+  float: right;
+}
+  ul {
+    display: none;
+  }
+  .responsive {
+    display: inline;
+    background-color: #aaa;
+    opacity: .9;
+    position: absolute;
+    top: 50px;
+    right: -5px;
+    width: 90%;
+    height: 100vh;
+    padding: 5px;
+    padding-left: 0;
+    overflow-x: hidden;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  li a {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 760px) and (orientation: landscape) {
+  li a {
+    font-size: 18px;
+  }
+  li a {
+    margin: 0;
+  }
+}
+
+.lotr-font {
+     font-family: LOTR;
+     font-size: 25px;
+}
+
+.center, img.header-image {
+     text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+    img.header-image {
+      width:  80vw;
+    }
+  .poem {
+    text-align: left;
+    font-size: 18px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
+.citation {
+     font-style: italic;
+}
+
+.page-content {
+     -moz-border-bottom-colors: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-color: transparent;
+     border-image: url("../images/frame.png") 30 30 30 30 fill round round;
+     border-style: solid;
+     border-width: 20px;
+     min-height: 73vh;
+}
+
+a {
+     text-decoration: none;
+}
+
+a:hover {
+     text-decoration: underline;
+}
+
+h1 {
+     font-size: 40px !important;
+}
+
+.index-button {
+  margin: 20px;
+}
+a .button{
+  color: beige;
+  font-size: 1.5em;
+}
+
+button.button {
+  background-image: url("../images/nav_bg.png");
+  border-radius: 5px;
+  border: 0;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+section.main-content {
+    width: 90%;
+    font-style: italic;
+    margin: auto;
+    font-size: 1.25em;
+}
+
+@media only screen and (max-width: 760px) {
+  section.main-content p {
+    text-align: justify;
+    font-size: 16px;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.thumbnail {
+     width: 200px;
+     box-shadow: 4px 4px 8px 0px #000;
+     margin: 15px;
+}
+
+@media only screen and (max-width: 760px) and (orientation: landscape) {
+  .thumbnail {
+    width: 40%;
+  }
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.main-info{
+  height: auto;
+  text-align: center;
+}
+
+.contributors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h2.contributors-heading {
+  text-align: center;
+}
+
+.contributorInfo {
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 760px) {
+  .contact-main {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px auto;
+  }
+  .contributors {
+    flex-direction: column;
+  }
+}
+
+h6#copyright {
+  text-align: center;
+}

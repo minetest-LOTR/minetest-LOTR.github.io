@@ -1,10 +1,71 @@
----
-title: "Contact"
-layout: "default"
-isPage: true
-nav_id: 05
----
-
-<h1 class="center lotr-font">contact</h1>
-<h4>IRC:</h4>
-<p>#lordofthetest on irc.freenode.net</p>
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title>Contact | Lord of the Test</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <script defer src="assets/js/main.js"></script>
+ </head>
+ <body>
+   <header>
+     <nav>
+        <a class="fas fa-home" href="index.html"></a>
+        <a class="fas fa-bars" href="javascript:void(0)" onclick="showMenu()"></a>
+        <ul class="navbar" id="navbar">
+          <li><a  href="index.html">Home</a></li>
+          <li><a  href="about.html">About</a></li>
+          <li><a  href="download.html">Download</a></li>
+          <li><a  href="gallery.html">Gallery</a></li>
+          <li><a  class="active" href="contact.html">Contact</a></li>
+     </ul>
+   </nav>
+    </header>
+<div class="page-content">
+  <h1 class="center lotr-font">Contact</h1>
+  <section class="contact-main">
+    <div class="main-info">
+      <h2>Github</h2>
+      <a href="https://github.com/minetest-LOTR/Lord-of-the-Test">https://github.com/minetest-LOTR/Lord-of-the-Test</a>
+    </div>
+    <div class="main-info">
+      <h2>IRC</h2>
+      <p>#lordofthetest on irc.freenode.net</p>
+    </div>
+  </section>
+  <h2 class="contributors-heading">Main Contributors</h2>
+  <section class="contributors">
+    <div class="contributorInfo">
+      <h3>Amaz</h3>
+        <p><b>Email:</b> <a href="mailto:amazlott@gmail.com">amazlott@gmail.com</a></p>
+        <p><b>GitHub:</b> Amaz1</p>
+        <p><b>IRC:</b> Amaz</p>
+        <p><b>Minetest Forum:</b> Amaz</p>
+      </div>
+      <div class="contributorInfo">
+      <h3>fishyWET</h3>
+        <p><b>Email:</b> <a href="mailto:fishyWET@hotmail.com">fishyWET@hotmail.com</a></p>
+        <p><b>GitHub:</b> neinwhal</p>
+        <p><b>IRC:</b> neinwhal</p>
+        <p><b>Minetest Forum:</b> fishyWET</p>
+      </div>
+      <div class="contributorInfo">
+      <h3>Lumidify</h3>
+        <p><b>Email:</b> <a href="mailto:lumidify@openmailbox.org"> lumidify@openmailbox.org</a></p>
+        <p><b>Github:</b> lumidify</p>
+        <p><b>IRC:</b> lumidify</p>
+        <p><b>Minetest Forum:</b> lumidify</p>
+      </div>
+  </section>
+</div>
+<footer>
+  <h6 id="copyright"></h6>
+  <script>
+    //Current copyright year script
+    var time = new Date();
+    document.getElementById('copyright').innerHTML = '&copy; Copyright ' + time.getFullYear() + ' Minetest-LOTR';
+  </script>
+</footer>
+</body>
+</html>
