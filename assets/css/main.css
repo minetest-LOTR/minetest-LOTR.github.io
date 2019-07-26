@@ -31,7 +31,7 @@ ul {
 
 }
 
-li {
+.header li {
      border-radius: 5px;
      display: inline;
      margin: 0px;
@@ -99,6 +99,14 @@ nav a.fa-bars {
     float: left;
     margin-left: 0;
   }
+}
+
+.image-header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	padding: 10px;
 }
 
 @media only screen and (max-width: 760px) and (orientation: landscape) {
@@ -234,6 +242,12 @@ h2.contributors-heading {
 .contributorInfo {
   margin: 0 20px;
 }
+
+.date {
+  text-align: right;
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: -20px;
 
 @media only screen and (max-width: 760px) {
   .contact-main {
